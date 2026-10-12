@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Resources and Formulation Co. Limited</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #243225;
+            background: #fffdf8;
+            line-height: 1.6;
+        }
+
+        .navbar {
+    min-height: 105px;
+    background: #075333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+/*===============
+logo
+===============*/
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.logo p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/*===============
+navigation links
+===============*/
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 5px;
+}
+
+nav a:hover {
+    color: #b8e86c;
+    border-bottom:4px solid #b4e76b;
+}
+
+nav .active {
+   border-bottom: 4px solid #b4e76b;
+}
+
+/*==============
+Register button
+==============*/
+
+.register-btn {
+    background: #70bd3b;
+    padding: 13px 28px !important;
+    border-radius: 8px;
+}
+
+.register-btn:hover {
+    background: #5da72e;
+    color: white;
+}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #f1f5e9 0%, #f1f5e9 50%, #e4eddb 100%);
+            padding: 80px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            align-items: center;
+            gap: 70px;
+        }
+
+        .eyebrow,
+        .section-label {
+            display: inline-block;
+            color: #4d793d;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            color: #233c28;
+            font-size: clamp(42px, 6vw, 68px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #4d813f;
+        }
+
+        .hero-text p {
+            max-width: 620px;
+            color: #5f6c60;
+            font-size: 17px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .primary-button,
+        .secondary-button,
+        .whatsapp-button,
+        .submit-button {
+            display: inline-block;
+            border-radius: 7px;
+            padding: 14px 24px;
+            font-weight: bold;
+            transition: 0.25s;
+        }
+
+        .primary-button {
+            background: #3d743e;
+            color: white;
+        }
+
+        .primary-button:hover {
+            background: #2e5e32;
+            transform: translateY(-2px);
+        }
+
+        .secondary-button {
+            border: 1px solid #9aab96;
+            color: #3b5f3e;
+        }
+
+        .secondary-button:hover {
+            background: white;
+        }
+
+        .hero-card {
+            background: white;
+            border: 1px solid #dce3d6;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 50px rgba(43, 72, 42, 0.08);
+        }
+
+        .feed-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero-card h3 {
+            color: #28472d;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .hero-card p {
+            color: #667267;
+        }
+
+        .card-line {
+            width: 45px;
+            height: 3px;
+            background: #78a85d;
+            margin: 25px 0 15px;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 100px 0;
+            background: #fffdf8;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 75px;
+            align-items: center;
+        }
+
+        .about-image {
+            min-height: 470px;
+            border-radius: 15px;
+            background:
+                linear-gradient(rgba(36, 76, 38, 0.45), rgba(36, 76, 38, 0.75)),
+                url("https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1000&q=80")
+                center/cover;
+            position: relative;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: white;
+        }
+
+        .image-overlay span {
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .image-overlay strong {
+            display: block;
+            font-size: 30px;
+            line-height: 1.2;
+            margin-top: 5px;
+        }
+
+        .about-text h2,
+        .section-heading h2,
+        .contact-intro h2 {
+            color: #263e2a;
+            font-size: clamp(34px, 4vw, 48px);
+            line-height: 1.15;
+            margin-bottom: 25px;
+        }
+
+        .about-text > p {
+            color: #667066;
+            margin-bottom: 18px;
+        }
+
+        .features {
+            display: grid;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 14px;
+        }
+
+        .feature > span {
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #e4efdd;
+            color: #4b7b3e;
+            font-weight: bold;
+        }
+
+        .feature strong {
+            color: #304a33;
+        }
+
+        .feature p {
+            color: #778077;
+            font-size: 14px;
+        }
+
+        /* PRODUCTS */
+        .services {
+            padding: 100px 0;
+            background: #f3f5eb;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 50px;
+        }
+
+        .section-heading h2 {
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            color: #6e786e;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e1e6dc;
+            border-radius: 12px;
+            padding: 30px;
+            transition: 0.25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(49, 73, 46, 0.08);
+        }
+
+        .service-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #304b34;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #707970;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 100px 0;
+            background: #fffdf8;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 0.85fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .contact-intro > p {
+            color: #6b746c;
+            max-width: 560px;
+            margin-bottom: 35px;
+        }
+
+        .contact-details {
+            display: grid;
+            gap: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            width: 45px;
+            height: 45px;
+            display: grid;
+            place-items: center;
+            background: #e7f0e0;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .contact-item span {
+            display: block;
+            color: #819080;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .contact-item a,
+        .contact-item p {
+            color: #344b37;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* FORM */
+        .contact-form-wrapper {
+            background: #f1f4ea;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid #e0e6da;
+        }
+
+        .contact-form h3 {
+            color: #304a34;
+            font-size: 27px;
+            margin-bottom: 5px;
+        }
+
+        .contact-form > p {
+            color: #747d75;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .contact-form label {
+            display: block;
+            color: #4c594d;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            border: 1px solid #d5ddd0;
+            background: white;
+            border-radius: 6px;
+            padding: 13px;
+            margin-bottom: 18px;
+            font: inherit;
+            outline: none;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #6c9c59;
+            box-shadow: 0 0 0 3px rgba(108, 156, 89, 0.1);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            background: #3d743e;
+            color: white;
+            font-size: 14px;
+        }
+
+        .submit-button:hover {
+            background: #2e5e32;
+        }
+
+        /* WHATSAPP */
+        .whatsapp-section {
+            padding: 55px 0;
+            background: #2f5734;
+            color: white;
+        }
+
+        .whatsapp-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .whatsapp-content .section-label {
+            color: #c9dfbb;
+        }
+
+        .whatsapp-content h2 {
+            font-size: 34px;
+            margin-bottom: 5px;
+        }
+
+        .whatsapp-content p {
+            color: #d2ddd3;
+        }
+
+        .whatsapp-button {
+            background: white;
+            color: #315c36;
+            white-space: nowrap;
+        }
+
+        .whatsapp-button:hover {
+            background: #edf4e9;
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1e3022;
+            color: white;
+        }
+
+        .footer-content {
+            padding: 60px 0;
+            display: grid;
+            grid-template-columns: 1.5fr 0.7fr 1fr;
+            gap: 60px;
+        }
+
+        .footer-brand h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: #aeb8af;
+            max-width: 350px;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a,
+        .footer-links span {
+            color: #aeb8af;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #39483c;
+            padding: 20px 0;
+        }
+
+        .footer-bottom p {
+            color: #89968c;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .hero-content,
+            .about-grid,
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 80px 0;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .hero {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons a {
+                text-align: center;
+            }
+
+            .about,
+            .services,
+            .contact {
+                padding: 70px 0;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-wrapper {
+                padding: 25px;
+            }
+
+            .whatsapp-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon"><img src="logo1.png" alt="image is here"></div>
+
+            <div>
+                <h1>AGRO RESOURCES</h1>
+                <h2>AND FORMULATION CO. LIMITED</h2>
+                <P>quality feed for healthy poultry</P>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agro-resources-about-us.html" >About us</a>
+            <a href="product.html" >Products</a>
+            <a href="agro-resources-contact.html" class="active">Contact</a>
+            <a href="#register" class="register-btn">Register</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <span class="eyebrow">
+                    QUALITY POULTRY FEED & FORMULATION
+                </span>
+
+                <h1>
+                    Nourishing poultry.
+                    <span>Growing businesses.</span>
+                </h1>
+
+                <p>
+                    Agro Resources and Formulation Co. Limited provides
+                    quality poultry feed and feed formulation solutions
+                    designed to support healthy birds and productive
+                    poultry farms.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="primary-button">
+                        Contact Us
+                    </a>
+
+                    <a href="#services" class="secondary-button">
+                        Our Products
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="feed-icon">🌱</div>
+
+                <h3>Quality Feed Solutions</h3>
+
+                <p>
+                    Reliable poultry nutrition formulated with the needs
+                    of farmers and poultry businesses in mind.
+                </p>
+
+                <div class="card-line"></div>
+
+                <strong>
+                    Agro Resources & Formulation Co. Ltd.
+                </strong>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <div class="image-overlay">
+                    <span>AGRO RESOURCES</span>
+
+                    <strong>
+                        Better Nutrition.<br>
+                        Better Growth.
+                    </strong>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">ABOUT US</span>
+
+                <h2>
+                    Supporting poultry farmers with quality feed solutions.
+                </h2>
+
+                <p>
+                    Agro Resources and Formulation Co. Limited is a
+                    poultry feed facility focused on producing and
+                    supplying quality feed products for poultry farmers,
+                    distributors and agricultural businesses.
+                </p>
+
+                <p>
+                    Our goal is to provide dependable feed solutions
+                    that help farmers maintain healthy birds, improve
+                    productivity and build sustainable poultry operations.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Quality Focus</strong>
+
+                            <p>
+                                Carefully formulated feed solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>✓</span>
+
+                        <div>
+                            <strong>Reliable Supply</strong>
+
+                            <p>
+                                Feed solutions for farms and businesses.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-label">
+                    WHAT WE OFFER
+                </span>
+
+                <h2>
+                    Our Feed Solutions
+                </h2>
+
+                <p>
+                    Practical poultry nutrition solutions for farmers,
+                    distributors and poultry businesses.
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <div class="service-icon">🐔</div>
+
+                    <h3>Broiler Feed</h3>
+
+                    <p>
+                        Feed solutions formulated to support broiler
+                        growth and efficient poultry production.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🥚</div>
+
+                    <h3>Layer Feed</h3>
+
+                    <p>
+                        Nutritional solutions designed to support healthy
+                        laying birds and consistent egg production.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌾</div>
+
+                    <h3>Feed Formulation</h3>
+
+                    <p>
+                        Feed formulation solutions tailored to the
+                        nutritional requirements of poultry production.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+
+                    <h3>Bulk Supply</h3>
+
+                    <p>
+                        Reliable feed supply for poultry farms,
+                        distributors and agricultural businesses.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+
+            <div class="contact-intro">
+
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Let's talk about your poultry feed needs.
+                </h2>
+
+                <p>
+                    Whether you are a poultry farmer, distributor or
+                    agricultural business, we'd be happy to hear from you.
+                    Contact Agro Resources and Formulation Co. Limited
+                    today.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+
+                        <div>
+                            <span>PHONE</span>
+
+                            <a href="tel:+2340000000000">
+                                +234 8037870874
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+
+                        <div>
+                            <span>EMAIL</span>
+
+                            <a href="mailto:info@agroresources.com">
+                                info@agroresources.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+
+                        <div>
+                            <span>ADDRESS</span>
+
+                            <p>
+                                Your facility address,<br>
+                                Nigeria
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- CONTACT FORM -->
+            <div class="contact-form-wrapper">
+
+                <form class="contact-form">
+
+                    <h3>
+                        Send Us a Message
+                    </h3>
+
+                    <p>
+                        Fill in your details and we'll get back to you.
+                    </p>
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                    >
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Tell us how we can help..."
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        Send Message →
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WHATSAPP -->
+    <section class="whatsapp-section">
+
+        <div class="container whatsapp-content">
+
+            <div>
+                <span class="section-label">
+                    QUICK CONTACT
+                </span>
+
+                <h2>
+                    Prefer WhatsApp?
+                </h2>
+
+                <p>
+                    Chat with Agro Resources and Formulation Co. Limited
+                    directly.
+                </p>
+            </div>
+
+            <a
+                href="https://wa.me/2340000000000"
+                target="_blank"
+                class="whatsapp-button"
+            >
+                💬 Chat on WhatsApp
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <h3>
+                    Agro Resources and Formulation Co. Limited
+                </h3>
+
+                <p>
+                    Quality poultry feed and formulation solutions
+                    for productive poultry farming.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Products</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Contact</h4>
+
+                <a href="tel:+2348037870874">
+                    +234 8037870874
+                </a>
+
+                <a href="mailto:info@agroresources.com">
+                    info@agroresources.com
+                </a>
+
+                <span>Nigeria</span>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Agro Resources and Formulation Co. Limited.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

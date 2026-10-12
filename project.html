@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show</title>
+    <style>
+        a{
+          border: 2px solid black;
+        }
+        nav {
+            text-align:right;
+        }
+
+        header {
+            background-color:white;
+        }
+        section{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .reg,
+        .reg1{
+            display: flex;
+            justify-content:space-evenly;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+    <h1> <img src="img6.png" width="100px" alt="image is here">GHAGROW</h1>
+    <h2>CHICKEN FEED</h2>
+    <P><i>quality feed for healthy poultry</i></P>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="product.html">PRODUCTS</a>
+        <a href="contact.html">CONTACT US</a>
+    </nav>
+    </header>
+    <img src="img7.jpg" width="1332px" alt="image is here"><br><br>
+
+
+    <main>
+        <fieldset>
+         <h1 class="reg">Customer Registration Form</h1>
+    <p class="reg1">in the details below to register with us and place your order</p>
+        <section>
+   
+    <form>
+<label for="full name">Full Name</label>
+<input type="full name" id="full name" name="full name" placeholder="enter your full name" required><br><br>
+
+<label for="email">Email address</label>
+<input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
+
+<label for="phone number">Phone Number</label>
+<input type="phone number" id="phone number" name="phone number" placeholder="Enter Your Phone number" required><br><br>
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="create a password"><br><br>
+
+<label for="location">location</label>
+<input type="location" id="location" name="location" placeholder="Enter your location" required><br><br>
+
+
+<label for="select feed type">select feed type</label><br>
+<select>
+    <option value="type">--select feed type--</option>
+    <option value="starter">starter</option>
+    <option value="grower">grower</option>
+    <option value="finisher">finisher</option>
+    <option value="layer">layer mash</option>
+</select><br><br>
+
+<label for="customer type">customer type</label><br><br>
+
+<label for="farmer">farmer</label><br>
+<input type="radio" id="farmer" name="farmer required>
+
+<label for="distributor">Distributor</label><br>
+<input type="radio" id="distributor" name="distributor" required>
+
+<label for="retailer">Retailer</label><br>
+<input type="radio" id="retailer" name="retailer" required><br><br>
+
+<label for="quantity">Quantity Required</label><br>
+<input type="quantity" id="quantity" name="quantity" placeholder="enter quantity(e.g50)" required><br><br>
+<label for="information">addition information</label>
+<textarea></textarea>
+</form>
+</fieldset>
+<aside>
+    <h2>our chicken feed products</h2>
+    <ul>
+        <li>chick starter feed</li>
+        <li>Grower feed</li>
+        <li>finisher feed</li>
+        <li>layer feed</li>
+    </ul><hr>
+    <h2>Why choose us</h2>
+</aside>
+</section>
+
+</main>
+
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+/*=====================
+GENERAL SETTINGS
+======================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f8f6;
+    color: #173b32;
+}
+
+/*================
+NAVIGATION BAR
+================*/
+
+.navbar {
+    min-height: 105px;
+    background: #075333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+/*===============
+logo
+===============*/
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.logo p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/*===============
+navigation links
+===============*/
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 5px;
+}
+
+nav a:hover {
+    color: #b8e86c;
+    border-bottom:4px solid #b4e76b;
+}
+
+nav .active {
+   border-bottom: 4px solid #b4e76b;
+}
+
+/*==============
+Register button
+==============*/
+
+.register-btn {
+    background: #70bd3b;
+    padding: 13px 28px !important;
+    border-radius: 8px;
+}
+
+.register-btn:hover {
+    background: #5da72e;
+    color: white;
+}
+
+/*==================
+main container
+==================*/
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 0.95fr;
+    gap: 20px;
+}
+
+/*===================
+form section
+=================*/
+
+.form-section {
+    background: white;
+    border: 1px solid #d1ded9;
+    border-radius: 8px;
+    padding: 27px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/*form heading*/
+
+.form-title {
+    display:flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.user-icon {
+    width: 58px;
+    height: 58px;
+    background: #087c4a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.form-title h2 {
+    font-size: 29px;
+    color: #075333;
+}
+
+.form-title p {
+    color: #63776f;
+    margin-top: 5px;
+}
+
+/*form rows*/
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:25px
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #233f36;
+}
+
+.form-group label span {
+    color: red;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd8d3;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2b9b58;
+    box-shadow: 0 0 4px rgba(43,155,88,0.3);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+    
+}
+
+.radio-group {
+    display: flex;
+    gap: 35px;
+  margin-top: 10px;
+}
+
+.radio-option {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal !important;
+}
+
+.radio-option input {
+    width: 20px;
+    height: 20px;
+    accent-color: #24994c;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 13px;
+    background: #26994d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #197b3a;
+}
+
+footer {
+   min-height: 65px;
+   background: #075333;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   margin-top: 30px;
+}
+.socials 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <!--navigation bar-->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon"><img src="logo1.png" alt="image is here"></div>
+
+            <div>
+                <h1>AGRO RESOURCES</h1>
+                <h2>AND FORMULATION CO. LIMITED</h2>
+                <P>quality feed for healthy poultry</P>
+            </div>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="agro-resources-about-us.html">About us</a>
+            <a href="product.html">Products</a>
+            <a href="agro-resources-contact.html">Contact</a>
+            <a href="#register" class="register-btn">Register</a>
+        </nav>
+    </header>
+    <div>
+        <img src="hero section.png" alt="image is here" width="1293px">
+    </div>
+    
+    <!--main content-->
+    <main class="container">
+
+        <!--registration form-->
+        <section class="form-section" id="register">
+
+            <div class="form-title">
+                <div class="user-icon"><img src="icons8-profile-50.png" alt=""></div>
+                <div>
+                    <h2>Customer Registration Form</h2>
+                    <p>details below to register with us and place your order.</p>
+                </div>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">FULL NAME <span>*</span></label>
+                        <input type="text" id="fullname" placeholder="enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span>*</span></label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span>*</span></label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <span>*</span></label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter your location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="feed">select feed type <span>*</span></label>
+                    <select id="feed" required>
+                        <option value="">--select feed type--</option>
+                        <option value="starter">chick starter feed</option>
+                        <option value="grower">Grower feed</option>
+                        <option value="finisher">Finisher feed</option>
+                        <option value="layer">layer feed</option>
+                    </select>
+                </div>
+
+                <!--customer type-->
+                <div class="form-group">
+                    <label>customer type <span>*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="customer" value="distributor">
+                            <span>distributor</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="customer" value="retailer">
+                            <span>Retailer</span>
+                        </label>
+                    </div>
+                </div>
+                <!--quantity-->
+                <div class="form-group">
+                    <label for="quantity">Quantity Required <span>*</span></label>
+                    <input type="number" id="quantity" placeholder="Enter quantity (e.g 50)" min="1" required>
+
+                </div>
+
+                <!--message-->
+                <div class="form-group">
+                    <label for="message">additional information</label>
+                    <textarea id="message" placeholder="Enter your message or special request..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">&nbsp; submit Registration</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Agro Resources and Formulation co. Limited.
+            All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>

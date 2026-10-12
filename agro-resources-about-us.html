@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Agro Resources and Formulation Co. Limited</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #173b35;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+    min-height: 105px;
+    background: #075333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+/*===============
+logo
+===============*/
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.logo p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/*===============
+navigation links
+===============*/
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 12px 5px;
+}
+
+nav a:hover {
+    color: #b8e86c;
+    border-bottom:4px solid #b4e76b;
+}
+
+nav .active {
+   border-bottom: 4px solid #b4e76b;
+}
+
+/*==============
+Register button
+==============*/
+
+.register-btn {
+    background: #70bd3b;
+    padding: 13px 28px !important;
+    border-radius: 8px;
+}
+
+.register-btn:hover {
+    background: #5da72e;
+    color: white;
+}
+        /* ABOUT COMPANY SECTION */
+        .about-company {
+            padding: 70px 7%;
+            background-color: #ffffff;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text small {
+            color: #087443;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            color: #075c3c;
+            margin: 15px 0 20px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #4d5f5b;
+            margin-bottom: 18px;
+        }
+
+        .about-btn {
+            display: inline-block;
+            background-color: #087443;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .about-btn:hover {
+            background-color: #05552f;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        /* VALUES SECTION */
+        .values {
+            padding: 65px 7%;
+            background-color: #f1f8f4;
+        }
+
+        .values-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .values-title h2 {
+            font-size: 35px;
+            color: #075c3c;
+            margin-bottom: 12px;
+        }
+
+        .values-title p {
+            color: #60736d;
+            font-size: 16px;
+        }
+
+        .values-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .value-box {
+            background-color: white;
+            padding: 30px 18px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .value-box:hover {
+            transform: translateY(-7px);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: #087443;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 18px;
+        }
+
+        .value-box h3 {
+            color: #075c3c;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .value-box p {
+            color: #64736f;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* MISSION SECTION */
+        .mission {
+            padding: 70px 7%;
+            background-color: white;
+        }
+
+        .mission-container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .mission-box {
+            padding: 35px;
+            border-left: 5px solid #087443;
+            background-color: #f7faf8;
+            border-radius: 8px;
+        }
+
+        .mission-box h2 {
+            color: #075c3c;
+            margin-bottom: 15px;
+        }
+
+        .mission-box p {
+            color: #596b66;
+            line-height: 1.7;
+        }
+
+        /* BOTTOM CTA */
+        .about-cta {
+            padding: 65px 7%;
+            text-align: center;
+            background: linear-gradient(
+                rgba(0, 82, 48, 0.85),
+                rgba(0, 82, 48, 0.85)
+            ),
+            url("images/farm.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .about-cta h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .about-cta p {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: white;
+            color: #087443;
+            padding: 14px 28px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background-color: #e8f5ee;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #064d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 900px) {
+            .about-container,
+            .mission-container {
+                grid-template-columns: 1fr;
+            }
+
+            .values-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .about-text h2 {
+                font-size: 30px;
+            }
+
+            .values-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 280px;
+            }
+
+            .about-cta h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon"><img src="logo1.png" alt="image is here"></div>
+
+            <div>
+                <h1>AGRO RESOURCES</h1>
+                <h2>AND FORMULATION CO. LIMITED</h2>
+                <P>quality feed for healthy poultry</P>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agro-resources-about-us.html" class="active">About us</a>
+            <a href="product.html">Products</a>
+            <a href="agro-resources-contact.html">Contact</a>
+            <a href="#register" class="register-btn">Register</a>
+        </nav>
+    </header>
+    <div>
+        <img src="hero section of about.png" width="1293px">
+    </div>
+
+    <!-- ABOUT COMPANY SECTION -->
+    <section class="about-company">
+        <div class="about-container">
+
+            <div class="about-text">
+                <small>AGRO RESOURCES AND FORMULATION CO. LIMITED</small>
+
+                <h2>
+                    Growing Agriculture,
+                    Building a Sustainable Future
+                </h2>
+
+                <p>
+                    Agro Resources and Formulation Co. Limited is a trusted
+                    agricultural company committed to providing high-quality
+                    agro solutions that support farmers, improve crop yields
+                    and promote food security.
+                </p>
+
+                <p>
+                    We specialize in the sourcing, processing and formulation
+                    of agricultural inputs, including fertilizers, soil
+                    enhancers and crop protection products.
+                </p>
+
+                <p>
+                    Our goal is to provide farmers with the right resources
+                    and knowledge to achieve better results today and for
+                    generations to come.
+                </p>
+
+                <a href="product.html" class="about-btn">
+                    Our Products &amp; Services →
+                </a><br>
+                <a href="index.html">back to previous page</a>
+            </div>
+
+            <div class="about-image">
+                <img src="img10.jpg"
+                     alt="Agro Resources agricultural facility">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="values">
+
+        <div class="values-title">
+            <h2>Our Values</h2>
+            <p>
+                These core values guide everything we do,
+                from our products to our partnerships.
+            </p>
+        </div>
+
+        <div class="values-container">
+
+            <div class="value-box">
+                <div class="value-icon">🌿</div>
+                <h3>Quality</h3>
+                <p>
+                    We deliver only the best products
+                    for crops and soil.
+                </p>
+            </div>
+
+            <div class="value-box">
+                <div class="value-icon">🤝</div>
+                <h3>Integrity</h3>
+                <p>
+                    We build trust through honesty
+                    and transparency.
+                </p>
+            </div>
+
+            <div class="value-box">
+                <div class="value-icon">🌱</div>
+                <h3>Innovation</h3>
+                <p>
+                    We embrace new ideas for better
+                    farming solutions.
+                </p>
+            </div>
+
+            <div class="value-box">
+                <div class="value-icon">👥</div>
+                <h3>Community</h3>
+                <p>
+                    We grow together with the farmers
+                    we serve.
+                </p>
+            </div>
+
+            <div class="value-box">
+                <div class="value-icon">🌍</div>
+                <h3>Sustainability</h3>
+                <p>
+                    We protect the environment for
+                    future generations.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MISSION AND VISION -->
+    <section class="mission">
+
+        <div class="mission-container">
+
+            <div class="mission-box">
+                <h2>Our Mission</h2>
+                <p>
+                    To provide reliable and innovative agricultural
+                    resources and formulation solutions that help
+                    farmers increase productivity while supporting
+                    sustainable agriculture.
+                </p>
+            </div>
+
+            <div class="mission-box">
+                <h2>Our Vision</h2>
+                <p>
+                    To become a leading agricultural resource and
+                    formulation company known for quality, innovation,
+                    sustainability and excellent customer service.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="about-cta">
+
+        <h2>
+            Together, We Cultivate a Greener Future
+        </h2>
+
+        <p>
+            Let us work together to build a healthier
+            and more productive agricultural future.
+        </p>
+
+        <a href="#" class="cta-btn">
+            Contact Us
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Agro Resources and Formulation Co. Limited.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

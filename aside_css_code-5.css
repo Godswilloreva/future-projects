@@ -1,0 +1,30 @@
+/* CSS for placing the Aside section on the right */
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.section {
+    flex: 1;
+}
+
+aside {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid white;
+    background: #06452d;
+}
+
+aside ul {
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
